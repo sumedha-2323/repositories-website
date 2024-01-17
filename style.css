@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    background-color: rgb(247, 247, 249);
+    width: 100%;
+    min-height: 130px;
+}
+.header div h3{
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    font-size: 20px;
+}
+.header .git-icon{
+    position:relative;
+    top: 20px;
+    left: 40px;
+    font-size: 35px;
+}
+.header nav ul{
+    position: absolute;
+    top: 100px;
+    list-style: none;
+}
+.header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+}
+.header nav ul li i{
+    padding-right: 10px;
+}
+.header nav ul li:hover{
+    background-color:  rgb(234, 231, 231);
+    border-radius: 4px;
+}
+.header .search-bar{
+    position: absolute;
+    right: 400px;
+    top: 30px;
+}
+.search-bar h4{
+    font-size: 25px;
+}
+.search-bar input,
+  .search-bar button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+ .search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+ .search-bar button:hover {
+    background-color: #45a049;
+  }
+  
+  .search-bar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .search-bar ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+ .search-bar a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+ .search-bar a:hover {
+    text-decoration: underline;
+  }
+  .search-bar .lists{
+    background-color: rgb(249, 238, 238);
+    width: 100%;
+    z-index: -1;
+  }
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+    margin: 10px auto;
+}
+.left{
+    width: 30%;
+}
+.left .git-avatar{
+    border: 1px solid rgb(244, 239, 239);
+    background-color: rgb(244, 239, 239);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.left .git-avatar i{
+    font-size: 250px;
+    position: relative;
+    left: 40px;
+    top: 25px;
+} 
+.left p{
+    font-size: 20px;
+    color: rgb(172, 168, 168);
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-weight: 400px;
+}
+.left button{
+    width:300px;
+    margin-left: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.right{
+    width: 70%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.right .one{
+    margin-left: 30px;
+    margin-top: 20px;
+    border-bottom: 2px solid grey;
+}
+.right .one .heading h3{
+    float: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(28, 106, 240);
+}
+.right .one .heading button{
+    float: left;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    border:1px solid rgb(190, 192, 194);
+    background-color: white;
+}
+.right .one .heading .star-btn{
+    border-radius: 4px;
+    padding: 5px 10px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.right .content{
+    margin-top: 30px;
+}
+.right .content span{
+    padding-right: 30px;
+    font-size: 18px;
+}
+.right p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.right .last{
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    .header div h3{
+        top: 20px;
+        font-size: 15px;
+        left: 70px;
+    }
+    .header .git-icon{
+        top: 10px;
+        left: 40px;
+        font-size: 25px;
+    }
+    .header nav ul li{
+        margin-left: 12px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .header nav ul{
+        top: 60px;
+    }
+    .header .search-bar{
+        right: 130px;
+        top: 90px;
+    }
+    .search-bar h4{
+        font-size: 12px;
+    }
+    .search-bar input,
+      .search-bar button {
+        margin-top: 0px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 10px;
+      }
+      
+     .search-bar button {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      
+     .search-bar button:hover {
+        background-color: #45a049;
+      }
+      .container{
+        display: block;
+      }
+      .left .right{
+        width: 100%;
+      }
+      .left .git-avatar{
+        width: 150px;
+        height: 150px;
+        margin: 20px 100%;
+    
+    }
+    .left .git-avatar i{
+        font-size: 100px;
+        position: relative;
+        left: 30px;
+        top: 25px;
+    } 
+    .left p{
+        font-size: 15px;
+        margin-left: 100%;
+        width: 100%;
+    }
+    .left button{
+        margin-left: 60px;
+    }
+    .right .one{
+        margin-left: 20px;
+        margin-top: 30px;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+    .right .one .heading h3{
+        float: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: rgb(28, 106, 240);
+    }
+    .right .one .heading button{
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .right .one .heading .star-btn{
+        border-radius: 4px;
+        padding: 5px 10px;
+        float: right;
+        cursor: pointer;
+    }
+    .right .content span{
+        padding-right: 30px;
+        font-size: 15px;
+    }
+    .right p{
+        font-size: 15px;
+    }
+}
+@media (min-width: 701px) and (max-width: 900px){
+    .header .search-bar{
+        position: absolute;
+        right: 100px;
+        top: 30px;
+    }
+    .left .git-avatar{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .left .git-avatar i{
+        font-size: 150px;
+    } 
+    .left p{
+        font-size: 20px;
+        color: rgb(172, 168, 168);
+        letter-spacing: 3px;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-weight: 400px;
+    }
+    .left button{
+        width:200px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+    .header .search-bar{
+        right:50px;
+    }
+    .left .git-avatar{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .left .git-avatar i{
+        font-size: 150px;
+    } 
+    .left p{
+        font-size: 20px;
+        color: rgb(172, 168, 168);
+        letter-spacing: 3px;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-weight: 400px;
+    }
+    .left button{
+        width:200px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 1201px) {
+    .left .git-avatar{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .left .git-avatar i{
+        font-size: 250px;
+    } 
+    .left p{
+        font-size: 20px;
+        color: rgb(172, 168, 168);
+        letter-spacing: 3px;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-weight: 400px;
+    }
+    .left button{
+        width: 300px;
+        margin-left: 20px;
+    }
+
+}

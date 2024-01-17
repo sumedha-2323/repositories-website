@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <i class="fa-brands fa-github git-icon"></i>
+        <h3>John Deo</h3>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-book-open"></i>Overview</li>
+                <li><i class="fa-brands fa-git-alt"></i>Repositories</li>
+                <li><i class="fa-solid fa-table-cells-large"></i>Projects</li>
+                <li><i class="fa-solid fa-cube"></i>Packages</li>
+                <li><i class="fa-regular fa-star"></i>Stars</li>
+            </ul>
+        </nav>
+        </div>
+        <div class="search-bar">
+            <h4>GitHub Repositories</h4>
+            <input type="text" id="username" placeholder="Enter GitHub username" />
+            <button id="search">Search</button>
+            <ul id="repo-list"></ul>
+            <script src="scripts.js"></script>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="left">
+            <div class="git-avatar">
+                <i class="fa-brands fa-square-gitlab"></i>
+            </div>
+            <p>John Deo</p>
+            <button>Edit Profile</button>
+        </div>
+        <div class="right">
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>.dotfiles</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Lua</span>
+                    <span>Shell</span>
+                    <span>CSS</span>
+                    <span>Python</span>
+                </div>
+                <p>Updated 2 days ago</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>AwesomeMenu</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Objective-C</span>
+                </div>
+                <p>Updated 4 days ago</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>Cookbook-elasticsearch</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Ruby</span>
+                </div>
+                <p>Updated 5 days ago</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>MagicalRecord</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Objective-C</span>
+                </div>
+                <p>Updated 7 days ago</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>drag-sort-listview</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Java</span>
+                </div>
+                <p>Updated last week</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>Animation Lab</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Swift</span>
+
+                </div>
+                <p>Updated 2 days ago</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>Flicks</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Ruby</span>
+                    <span>Swift</span>
+                    <span>CSS</span>
+                    <span>Python</span>
+                </div>
+                <p>Updated on Dec 30, 2023</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>cryptpad</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>EJS</span>
+                </div>
+                <p>Updated on Dec 18, 2023</p>
+            </div>
+            <div class="one">
+                <div class="heading">
+                    <span>
+                        <h3>resque</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Ruby</span>
+                    <span>JavaScript</span>
+                </div>
+                <p>Updated on Dec 15, 2023</p>
+            </div>
+            <div class="one last">
+                <div class="heading">
+                    <span>
+                        <h3>VrTracker</h3>
+                    </span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>
+                        <button>public</button>
+                    </span>
+                    <button class="star-btn"><i class="fa-regular fa-star"></i> &nbsp; Star</button>
+                </div>
+                <div class="content">
+                    <span>Python</span>
+                    <span>Other</span>
+                </div>
+                <p class="para">Updated on Dec 10, 2023</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
